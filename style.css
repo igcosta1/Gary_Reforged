@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.tudo {
+    width: 370px;
+    height: 400px;
+    position: fixed;
+    bottom: 20%;
+    right: 1%;
+    border-radius: 10px;
+    display: block;
+}
+
+.tudo .title {
+    background: #1e81b0;
+    color: white;
+    line-height: 2.5;
+    border-radius: 15px 15px 0 0;
+    text-align: left;
+    font-size: 20px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.title {
+
+    cursor: pointer;
+}
+
+.tudo .box {
+    border: 1px solid #efefef;
+    padding: 10px 15px;
+    min-height: 400px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.tudo .box .item {
+    display: flex;
+    float: left;
+    margin: 10px 0;
+}
+
+.tudo .box .item .icon {
+    background: #1e81b0;
+    color: rgb(255, 255, 255);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+.tudo .box .item .msg {
+    background: #1E81B0;
+    color: white;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 270px;
+    margin-left: 10px;
+    word-break: break-word;
+    
+}
+
+.tudo .box .item .msg p {
+    padding: 10px;
+ 
+}
+
+.person{
+
+    background: #000000;
+    color: rgb(255, 255, 255);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    position: relative;
+    left: 330px;
+}
+
+.tudo .box .item.right   {
+    float: right;
+    position: relative;
+    right: 50px;
+}
+
+.tudo .box .item.right .msg {
+    background: #efefef;
+    color: #333;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.tudo .typing-area {
+    width: 100%;
+    background: #1e81b0;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.tudo .typing-area .input-field {
+    width: 100%;
+    position: relative;
+}
+
+.tudo .typing-area .input-field input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    outline: none;
+    padding-right: 70px;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s all ease;
+}
+
+.tudo .typing-area .input-field input:focus {
+    border-color: #ffffff;
+}
+
+.tudo .typing-area .input-field button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 1px solid #007bff;
+    padding: 5px 10px;
+    border-radius: 50px;
+    color: #007bff;
+    outline: none;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s all ease;
+}
+
+.tudo .typing-area .input-field button:hover {
+    background: #1e81b0;
+    color: white;
+}
+
+.tudo .typing-area .input-field input:valid ~ button {
+    opacity: 1;
+    pointer-events: auto;
+}
